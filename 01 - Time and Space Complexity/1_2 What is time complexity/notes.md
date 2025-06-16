@@ -1,4 +1,6 @@
-# What is time complexity
+# What is time complexity(Depends on loop) 
+
+**Time complexity means in the respect of input, how many operations it is doing**
 
 **Time complexity does not work on Time it works on stepa or operations**
 
