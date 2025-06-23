@@ -18,3 +18,6 @@ int main()
 }
 ```
 **Time complexity of the above code is **O(N*logN)** as nested loop and incrementing by multiplication**
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+

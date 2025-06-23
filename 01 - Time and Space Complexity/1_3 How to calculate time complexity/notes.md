@@ -22,3 +22,4 @@
    ```
    > Here from n-1 the constant part -1 wil be ignored<br>
 
+![Time complexity Graph](assets/timeComplexityGraph.png)
