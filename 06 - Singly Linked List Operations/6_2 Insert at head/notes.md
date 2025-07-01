@@ -47,6 +47,30 @@ int main()
 20
 30
 ```
+**Function-by-function analysis:**
+
+1. **insert_at_head()**: O(1)
+- Creates a new node: O(1)
+- Updates pointers: O(1)
+- No loops or recursion
+
+2. **printLinkedList()**: O(n)
+- Traverses the entire linked list once
+- Visits each of the n nodes exactly once
+- The while loop runs n times
+
+3. **main()**: O(1) for setup + O(n) for function calls
+- Creating initial nodes: O(1)
+- Linking nodes: O(1)
+- Calling insert_at_head(): O(1)
+- Calling printLinkedList(): O(n)
+
+**Overall time complexity:**
+O(n) - dominated by the printLinkedList() function.
+
+**Space complexity:**
+**O(1)** - only using a constant amount of extra space (the **temp** pointer and **newNode** pointer), not counting the space for the linked list itself.
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 

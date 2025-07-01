@@ -55,3 +55,20 @@ int main()
 30
 100
 ```
+**Function-by-function analysis:**
+
+1. **insert_at_tail()**: **O(n)**
+- Creates a new node: **O(1)**
+- Checks if head is NULL: **O(1)**
+- Traverses to the last node: The while loop runs until it reaches the last node, visiting each node once
+- In a list of n nodes, this takes **O(n)** time
+- Updates the last node's next pointer: **O(1)**
+
+2. **printLinkedList()**: **O(n)**
+- Traverses the entire linked list once
+- Visits each of the n nodes exactly once
+
+3. **main()**: **O(1)** for setup + **O(n)** for function calls
+- Creating and linking initial nodes: **O(1)**
+- Calling insert_at_tail(): **O(n)**
+- Calling printLinkedList(): **O(n)**
