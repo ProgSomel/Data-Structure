@@ -118,6 +118,8 @@ int main()
 In Function: 0x7ffc49905e18
 In Main: 0x7ffc49905e50
 ```
+![Reference of Node](assets/image.png)
+![Reference of Node](assets/image%20copy.png)
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 
@@ -144,3 +146,4 @@ int main()
 In Function: 0x7ffe24e6a9a0
 In Main: 0x7ffe24e6a9a0
 ```
+![Reference of Pointer](assets/image%20copy%202.png)
