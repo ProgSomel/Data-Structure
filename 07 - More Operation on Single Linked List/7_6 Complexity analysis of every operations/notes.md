@@ -1,0 +1,1 @@
+[Time Complexity of all Linked List Operations](https://docs.google.com/document/d/1d4y8Wvrpquz4vnHq348WiXNTQ7W4wk8GVA94NSnOE88/edit?tab=t.0)
