@@ -11,8 +11,13 @@ class Node {
     }
 };
 
-void insert_at_head(Node* &head, int val ){
+void insert_at_head(Node* &head, Node* tail, int val ){
     Node* newNode = new Node(val);
+    if(head == NULL){
+        head = newNode;
+        tail = newNode;
+        return;
+    }
     newNode->next = head;
     head = newNode;
 }
@@ -34,7 +39,7 @@ int main()
 
     head->next = a;
     a->next = b;
-    insert_at_head(head, 100); 
+    insert_at_head(head, tail, 100); 
     printLinkedList(head);
     return 0;
 }
