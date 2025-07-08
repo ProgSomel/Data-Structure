@@ -1,5 +1,3 @@
-# Insert at Tail
-```c++
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -15,16 +13,16 @@ class Node {
     }
 };
 
-void insertAtTail(Node* &head, Node* &tail, int val){
+void insertAtAnyPosition(Node* &head, Node* &tail, int pos, int val){
     Node* newNode = new Node(val);
-    if(head == NULL){
-        head = newNode;
-        tail = newNode;
-        return;
+    Node* tmp = head;
+    for(int i = 0; i < pos-1; i++){
+        tmp = tmp->next;
     }
-    tail->next = newNode;
-    newNode->prev = tail;
-    tail = newNode;
+    newNode->next = tmp->next;
+    tmp->next->prev = newNode;
+    tmp->next = newNode;
+    newNode->prev = tmp;
 }
 
 void printForward(Node* head){
@@ -60,13 +58,8 @@ int main()
     tail->prev = a;
 
     printForward(head);
-    insertAtTail(head, tail, 100);
+    insertAtAnyPosition(head, tail, 2, 100);
     printForward(head);
 
     return 0;
 }
-```
-```bash
-10 20 30 
-10 20 30 100
-```
