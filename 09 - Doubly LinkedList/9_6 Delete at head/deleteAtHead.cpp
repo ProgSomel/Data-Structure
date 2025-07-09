@@ -14,6 +14,7 @@ class Node {
 };
 
 void deleteAtHead(Node* &head, Node* &tail){
+    if(head == NULL) return;
     Node* deletedNode = head;
     head = head->next;
     delete deletedNode;

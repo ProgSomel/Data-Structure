@@ -1,5 +1,3 @@
-# Delete at Head
-```c++
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -15,16 +13,16 @@ class Node {
     }
 };
 
-void deleteAtHead(Node* &head, Node* &tail){
+void deleteAtTail(Node* &head, Node* &tail){
     if(head == NULL) return;
-    Node* deletedNode = head;
-    head = head->next;
+    Node* deletedNode = tail;
+    tail = deletedNode->prev;
     delete deletedNode;
-    if(head == NULL){
-        tail = NULL;
+    if(tail == NULL){
+        head = NULL;
         return;
     }
-    head->prev = NULL;
+    tail->next = NULL;
 }
 
 void printForward(Node* head){
@@ -60,9 +58,8 @@ int main()
     tail->prev = a;
 
     printForward(head);
-    deleteAtHead(head, tail);
+    deleteAtTail(head, tail);
     printForward(head);
 
     return 0;
 }
-```
