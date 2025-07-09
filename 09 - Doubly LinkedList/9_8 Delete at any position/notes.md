@@ -1,4 +1,4 @@
-# Delete Tail
+# Delete at any Position
 ```c++
 #include<bits/stdc++.h>
 using namespace std;
@@ -15,16 +15,16 @@ class Node {
     }
 };
 
-void deleteAtTail(Node* &head, Node* &tail){
+void deleteAtAnyPosition(Node* &head, Node* &tail, int pos){
     if(head == NULL) return;
-    Node* deletedNode = tail;
-    tail = deletedNode->prev;
-    delete deletedNode;
-    if(tail == NULL){
-        head = NULL;
-        return;
+    Node* tmp = head;
+    for(int i = 0; i < pos-1; i++){
+        tmp = tmp->next;
     }
-    tail->next = NULL;
+    Node* deletedNode = tmp->next;
+    tmp->next = tmp->next->next;
+    tmp->next->prev = tmp;
+    delete deletedNode;
 }
 
 void printForward(Node* head){
@@ -60,7 +60,7 @@ int main()
     tail->prev = a;
 
     printForward(head);
-    deleteAtTail(head, tail);
+    deleteAtAnyPosition(head, tail, 1);
     printForward(head);
 
     return 0;
@@ -68,5 +68,5 @@ int main()
 ```
 ```bash
 10 20 30 
-10 20
+10 30 
 ```
