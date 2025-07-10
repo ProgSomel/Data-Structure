@@ -1,0 +1,2 @@
+# Introduction
+[List Built-in Function](https://docs.google.com/document/d/1IbS-qmFx6oRO-GyIG55yavdDUHpfHTNM/edit?tab=t.0)
