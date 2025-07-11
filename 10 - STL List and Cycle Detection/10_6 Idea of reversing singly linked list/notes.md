@@ -1,0 +1,1 @@
+# Idea of reversing singly linked list
