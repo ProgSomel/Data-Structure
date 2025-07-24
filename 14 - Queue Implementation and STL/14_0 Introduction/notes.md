@@ -1,0 +1,1 @@
+[Queue Built-in Function](https://docs.google.com/document/d/1tiYAlnJZWbuamFGwLgR4tGm2TEm_FQe0hxF-rXy-9bU/edit?tab=t.0)
