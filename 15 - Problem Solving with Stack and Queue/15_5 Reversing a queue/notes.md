@@ -1,0 +1,1 @@
+[Reversing a Queue](https://www.naukri.com/code360/problems/reversing-a-queue_982934)
