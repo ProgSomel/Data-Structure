@@ -1,4 +1,8 @@
+# Preorder Traversal Implementation
+
+```c++
 #include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 
 class Node {
@@ -13,6 +17,13 @@ class Node {
     }
 };
 
+void preorderTravesal(Node* root){
+    if(root == NULL) return;
+    cout << root->val << " ";
+    preorderTravesal(root->left);
+    preorderTravesal(root->right);
+
+}
 
 int main()
 {
@@ -29,6 +40,10 @@ int main()
     b->left = d;
     b->right = e;
 
-
+    preorderTravesal(root);
     return 0;
 }
+```
+```bash
+10 20 40 30 50 60 
+```
