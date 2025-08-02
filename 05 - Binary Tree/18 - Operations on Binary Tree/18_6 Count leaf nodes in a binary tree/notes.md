@@ -1,4 +1,5 @@
 # Count leaf nodes in a binary tree
+![Count Leaf Nodes](assets/image.png)
 ```c++
 #include<bits/stdc++.h>
 using namespace std;
