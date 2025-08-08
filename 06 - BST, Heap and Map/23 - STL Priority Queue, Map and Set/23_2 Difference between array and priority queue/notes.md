@@ -30,9 +30,9 @@
 ```
 8 5
 
-```shell
+
 ### 🔹 Key Takeaway
 - Use **Array** when **index-based access speed** is most important.
 - Use **Priority Queue** when **retrieving the highest/lowest priority element** efficiently is most important.
-```
+
 
